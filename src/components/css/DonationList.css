@@ -1,0 +1,94 @@
+.donation-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-color: #fffaf4; */
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("/src/assets/home_background.jpg") center/cover no-repeat;
+  font-family: "Poppins", Arial, sans-serif;
+  
+}
+
+.donation-container:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.donation-title {
+  font-size: 1.6rem;
+  color: #f6ad55;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-left: 5px solid #2563eb;
+  padding-left: 10px;
+}
+
+.donation-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f8fafc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.donation-table th {
+  background-color: #f6ad55;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.donation-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #1e293b;
+  font-size: 0.95rem;
+}
+
+.donation-table tr:hover {
+  background-color: #eff6ff;
+  transition: 0.3s;
+}
+
+/* Status badge styles */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: white;
+}
+
+.status-badge.delivered {
+  background-color: #22c55e; /* Green */
+}
+
+.status-badge.accepted {
+  background-color: #3b82f6; /* Blue */
+}
+
+.status-badge.pending {
+  background-color: #facc15; /* Yellow */
+  color: #1f2937;
+}
+
+.status-badge.cancelled {
+  background-color: #ef4444; /* Red */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .donation-table th, .donation-table td {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .donation-title {
+    font-size: 1.3rem;
+  }
+}

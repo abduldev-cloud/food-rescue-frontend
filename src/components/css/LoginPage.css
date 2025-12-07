@@ -1,0 +1,168 @@
+/* ---------- Global Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- Page Layout ---------- */
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: 
+    linear-gradient(rgba(246, 173, 85, 0.7), rgba(255, 203, 130, 0.8)),
+    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  animation: bgPulse 6s infinite alternate;
+}
+
+/* ---------- Form Card ---------- */
+.login-form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 50px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.6s ease;
+  transition: all 0.3s ease;
+}
+
+.login-form:hover {
+  transform: translateY(-3px);
+}
+
+/* ---------- Headings ---------- */
+.login-form h2 {
+  text-align: center;
+  color: #f6ad55;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* ---------- Input Fields ---------- */
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #f6ad55;
+  background: #fffaf3;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  font-size: 15px;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #f6ad55;
+  box-shadow: 0 0 6px rgba(246, 173, 85, 0.6);
+}
+
+/* ---------- Button ---------- */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background: #f6ad55;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #e6953b;
+  box-shadow: 0 4px 12px rgba(246, 173, 85, 0.4);
+}
+
+/* ---------- Toggle Text ---------- */
+.login-form p {
+  text-align: center;
+  margin-top: 18px;
+  color: #e6953b;
+  cursor: pointer;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.login-form p:hover {
+  color: #c67a1f;
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bgPulse {
+  from {
+    filter: brightness(1);
+  }
+  to {
+    filter: brightness(1.15);
+  }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 30px 25px;
+  }
+
+  .login-form h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.role-section {
+  margin-top: 15px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.role-title {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* Bordered box */
+.role-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border: 2px solid #f4a340;   /* <-- Border color */
+  border-radius: 8px;
+  background: #fffdf8;
+}
+
+.role-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 15px;
+}

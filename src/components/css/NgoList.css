@@ -1,0 +1,65 @@
+.ngo-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+.ngo-container:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.ngo-title {
+  font-size: 1.6rem;
+  color: #f6ad55;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-left: 5px solid #2563eb;
+  padding-left: 10px;
+}
+
+.ngo-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f8fafc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ngo-table th {
+  background-color: #f6ad55;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.ngo-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #1e293b;
+  font-size: 0.95rem;
+}
+
+.ngo-table tr:hover {
+  background-color: #eff6ff;
+  transition: 0.3s;
+}
+
+.ngo-table tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .ngo-table th, .ngo-table td {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .ngo-title {
+    font-size: 1.3rem;
+  }
+}
+
