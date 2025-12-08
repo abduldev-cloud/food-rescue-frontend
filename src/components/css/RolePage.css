@@ -2,54 +2,48 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* background-color: #fffaf4; */
   background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("/src/assets/home_background.jpg") center/cover no-repeat;
   font-family: "Poppins", Arial, sans-serif;
   
 }
 
-
-/* .navbar {
-  display: flex;
-  align-items: center;
-  background: linear-gradient(90deg, #f6ad55, #fbd38d);
-  padding: 14px 20px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-} */
-
 .navbar {
   display: flex;
-  justify-content: space-between;   /* pushes left + right apart */
+  justify-content: space-between; 
   align-items: center;
   background: linear-gradient(90deg, #f6ad55, #fbd38d);
   padding: 14px 20px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-.back-btn {
+
+.logout-btn {
   background: white;
   border: none;
   color: #f6ad55;
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 600;
   border-radius: 8px;
-  padding: 4px 10px;
+  padding: 6px 14px;
   cursor: pointer;
-  margin-right: 12px;
-  transition: all 0.2s ease;
+  transition: 0.2s ease;
 }
 
-.back-btn:hover {
+.logout-btn:hover {
   background-color: #ffe8c2;
   transform: scale(1.05);
 }
 
+
 .nav-title {
   color: white;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 700;
   margin: 0;
+  text-align: right;
+  flex: 1;               
 }
+
 
 
 .main-content {
@@ -58,12 +52,12 @@
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 100px);
-  width: 85%; /* wider layout */
-  max-width: 1100px; /* cap for large screens */
+  width: 85%; 
+  max-width: 1100px; 
   margin: 60px auto;
   padding: 80px 60px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.7); /* stronger opacity */
+  background-color: rgba(255, 255, 255, 0.7); 
   backdrop-filter: blur(10px);
   border-radius: 25px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -71,7 +65,7 @@
 
 
 .title {
-  font-size: 36px; /* bigger for impact */
+  font-size: 36px; 
   font-weight: 800;
   color: #2d3748;
   margin-bottom: 10px;  

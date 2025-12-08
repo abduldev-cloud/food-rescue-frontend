@@ -8,16 +8,19 @@ const HomePage = () => {
   return (
     <div className="homepage">
       
+
+
       <nav className="navbar">
-        <div className="brand">SavePlate</div>
-        <div className="nav-links">
-          {/* <a href="#login">Login</a> */}
-          <button onClick={() => navigate("/login")}>Login</button>
-          <a href="#about">About Us</a>
-          <a href="#services">Our Services</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
+  <div className="brand">SavePlate</div>
+
+  <div className="nav-links">
+    <button onClick={() => navigate("/login")}>Login</button>
+    <a href="#about">About Us</a>
+    <a href="#services">Our Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
 
       
       <section className="hero">

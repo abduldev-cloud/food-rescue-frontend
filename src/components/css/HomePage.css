@@ -6,16 +6,16 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* Navbar */
+/* NAVBAR */
 .navbar {
-  width: 100%;
-  background: #ff9f45;
-  padding: 1rem 3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;  
   align-items: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px 40px;
+  background: #f7b667;
+  position: relative;
 }
+
 
 .brand {
   font-size: 1.8rem;
@@ -23,19 +23,48 @@
   color: #fff;
 }
 
+.nav-links {
+  position: absolute;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; 
+}
+
+
 .nav-links a {
   color: #fff;
   text-decoration: none;
-  margin-left: 2rem;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: 0.3s;
 }
 
 .nav-links a:hover {
   color: #222;
 }
 
-/* Hero */
+.nav-links button {
+  background: transparent;
+  color: white;
+  padding: 4px 10px;       
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1;       
+  display: flex;
+  align-items: center;  
+  position: relative;
+  top: -10px; 
+}
+
+
+.nav-links button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* HERO SECTION */
 .hero {
   position: relative;
   background-image: url("https://www.filcon.org/wp-content/uploads/2021/07/istockphoto-1177156986-612x612-1.jpg");
@@ -64,7 +93,7 @@
   font-size: 1.2rem;
 }
 
-/* About */
+/* ABOUT SECTION */
 .about {
   background: #fff9f2;
   text-align: center;
@@ -86,7 +115,7 @@
   font-size: 1.1rem;
 }
 
-/* Services */
+/* SERVICES */
 .services {
   background: #ffe3b3;
   padding: 4rem 2rem;
@@ -125,7 +154,7 @@
   margin-bottom: 0.8rem;
 }
 
-/* Why Choose Us */
+/* WHY CHOOSE US */
 .why {
   background: #fff3e0;
   text-align: center;
@@ -170,7 +199,7 @@
   margin-bottom: 0.5rem;
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
   background: #222;
   color: #fff;
@@ -196,7 +225,7 @@
   opacity: 0.8;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .service-box {
     flex-direction: column;
@@ -218,16 +247,27 @@
   .overlay h1 {
     font-size: 1.8rem;
   }
+
+  .nav-links {
+    gap: 1rem;
+    right: 20px;
+  }
+
+  .nav-links a,
+  .nav-links button {
+    font-size: 0.9rem;
+  }
 }
+
+/* SMOOTH SCROLL + NO HORIZONTAL SCROLL */
 html {
   scroll-behavior: smooth;
 }
 
-/* Make the whole page span full width */
 body, html {
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden;
-  box-sizing: border-box;
+  box-sizing: border-box;
 }
