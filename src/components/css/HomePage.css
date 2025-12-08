@@ -271,3 +271,34 @@ body, html {
   overflow-x: hidden;
   box-sizing: border-box;
 }
+
+/* MOBILE FIX FOR MAIN NAVBAR */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+    padding: 12px 16px;
+  }
+
+  .brand {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .nav-links {
+    position: static;       /* remove absolute on mobile */
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .nav-links button {
+    padding: 4px 10px;
+    font-size: 0.9rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+}
